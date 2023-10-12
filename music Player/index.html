@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Sevenlier</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+
+    <!-- main code -->
+    <main>
+      <!--nav bar -->
+    
+    <nav class="mainnav navbar shadow navbar-expand-lg  navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark" style="min-width: 350px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+        Sevenlier
+        <div style="font-size: 13px;">
+            Time To Rock
+          </div>
+    
+         </a>
+         <div>
+         <div class="input-group ">
+          <input type="text" class="form-control text-black bg-white" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="bg-black text-white border-0  input-group-text text-dark" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></span>
+        </div>
+        
+        
+      </div>
+      <div class="text-white h5 mx-2">
+          <a href="https://www.facebook.com/your-page-url">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/accounts/login/?next=%2Fyour-page-url%2F&source=desktop_nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
+          <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AYZoVhd1H1OMD7aGWx61JOThNoMBBseSPgMYkWnhzjwZzmtrsj11BEUDpDeYKFOuQwGRcA11G8gomg&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-452852088%3A1697039841520860&theme=glif">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+              <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+            </svg>
+
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discover</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Release</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                genre
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white" href="#">Pop</a></li>
+                <li><a class="dropdown-item text-white" href="#">R&B</a></li>
+                <li><hr class="dropdown-divider "></li>
+                <li><a class="dropdown-item text-white" href="#">Country</a></li>
+              </ul>
+            </li>
+
+            <img class="rounded-circle" src="images/profile pic.jpeg" style="width: 40px;height: 40px;">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hi Ak
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end bg-dark">
+                  <li><a class="dropdown-item text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                  </svg>Profile</a></li>
+                  <li><a class="dropdown-item text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                  </svg>settings</a></li>
+                  <li><hr class="dropdown-divider "></li>
+                  <li><a class="dropdown-item text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>logout</a></li>
+                </ul>
+              </li>
+              
+            
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar end -->
+    <aside class="aside section-1">
+      <!-- Banner Section -->
+      <section class="container">
+          <div class="box">
+              <img src="images/banner1.jpg" alt="Banner-1">
+          </div>
+          <div class="box" style="z-index: 1;">
+              <img src="images/banner2.jpg" alt="Banner-3">
+          </div>
+          <div class="box">
+              <img src="images/banner 3.jpg" alt="Banner-2">
+          </div>
+      </section>
+      </aside>
+      <div>
+
+
+      <aside sidebar>
+       
+        <div class="sidebar text-white pt-5 " style="margin-top : 50px; margin-left: 20px;" >
+          <h1>Playlist</h1>
+          <div class="nav-spacer"></div>
+          <ul class="nav nav-pills mb-3 playlist-nav" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+
+          <!---small song playlist start--->
+          <div class="sidebar-song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+            <div class="col-1 h3">01</div>
+  
+            <div class="col d-flex">
+              <img class="sidebar-playlistimage rounded m-1"src="images/devid guetta.jpg">
+              <div class="ms-1">
+              <div>Hey Mama</div> <small>ft Nicki Minaj, Bebe Rexha & Afrojack</small> 
+          </div>
+            </div>
+            <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg>
+          </div>
+          </div>
+          
+          <!---small song playlist end--->
+  
+  
+          <!---small song playlist start--->
+  
+          <div class="sidebar-song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+            <div class="col-1 h3">02</div>
+  
+            <div class="col d-flex">
+              <img class="sidebar-playlistimage rounded m-1"src="images/04.jpg">
+              <div class="ms-1">
+              <div>You Don't Own Me</div> <small>Lesley Gore · 1963</small> 
+          </div>
+            </div>
+            <div class="col-2">04:10 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg>
+          </div>
+          </div>
+          <!---small song playlist end--->
+  
+  
+          <!---small song playlist start--->
+  
+          <div class="sidebar-song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+            <div class="col-1 h3">03</div>
+  
+            <div class="col d-flex">
+              <img class="sidebar-playlistimage rounded m-1"src="images/akon.jpg">
+              <div class="ms-1">
+              <div>Right Now (Na Na Na)</div> <small>Akon </small> 
+          </div>
+            </div>
+            <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg>
+          </div>
+          </div>
+          <!---small song playlist end--->
+  
+  
+          <!---small song playlist start--->
+  
+          <div class="sidebar-song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+            <div class="col-1 h3" >04</div>
+  
+            <div class="col d-flex">
+              <img class="sidebar-playlistimage rounded m-1"src="images/01m.jpg">
+              <div class="ms-1">
+              <div>Payphone </div> <small>Maroon 5, ft. Wiz Khalifa </small> 
+          </div>
+            </div>
+            <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg>
+          </div>
+          </div>
+          <!---small song playlist end--->
+  
+  
+          <!---small song playlist start--->
+  
+          <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+            <div class="col-1 h3">05</div>
+  
+            <div class="col d-flex">
+              <img class="playlistimage rounded m-1"src="images/one.jpg">
+              <div class="ms-1">
+              <div>Counting Stars</div> <small>OneRepublic </small> 
+          </div>
+            </div>
+            <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg>
+          </div>
+          </div>
+          <!---small song playlist end--->
+  
+  
+
+      </aside>
+
+   
+
+    <!-- start play list -->
+    <div class="playlist text-white pt-5 " style="margin-top : 50px; margin-left: 20px;" >
+      <div class="nav-spacer"></div>
+      <ul class="nav nav-pills mb-3 playlist-nav" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Featured</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Trending</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">New Release</button>
+        </li>
+        
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+       
+       
+       
+          <!---small song playlist start--->
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">01</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/devid guetta.jpg">
+            <div class="ms-1">
+            <div>Hey Mama</div> <small>ft Nicki Minaj, Bebe Rexha & Afrojack</small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">02</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/04.jpg">
+            <div class="ms-1">
+            <div>You Don't Own Me</div> <small>Lesley Gore · 1963</small> 
+        </div>
+          </div>
+          <div class="col-2">04:10 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">03</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/akon.jpg">
+            <div class="ms-1">
+            <div>Right Now (Na Na Na)</div> <small>Akon </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3" >04</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/01m.jpg">
+            <div class="ms-1">
+            <div>Payphone </div> <small>Maroon 5, ft. Wiz Khalifa </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">05</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/one.jpg">
+            <div class="ms-1">
+            <div>Counting Stars</div> <small>OneRepublic </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">06</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/aniruth.jpg">
+            <div class="ms-1">
+            <div>Kaavaali</div> <small>Anirudh Ravichander </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+      </div>
+
+        
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+          
+         
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">01</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/04.jpg">
+            <div class="ms-1">
+            <div>You Don't Own Me</div> <small>Lesley Gore · 1963</small> 
+        </div>
+          </div>
+          <div class="col-2">04:10 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">02</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/akon.jpg">
+            <div class="ms-1">
+            <div>Right Now (Na Na Na)</div> <small>Akon </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">03</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/01m.jpg">
+            <div class="ms-1">
+            <div>Payphone </div> <small>Maroon 5, ft. Wiz Khalifa </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">04</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/one.jpg">
+            <div class="ms-1">
+            <div>Counting Stars</div> <small>OneRepublic </small> 
+        </div>
+          </div>
+          <div class="col-2">03:19 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">01</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/one.jpg">
+            <div class="ms-1">
+            <div>Counting Stars</div> <small>OneRepublic </small> 
+        </div>
+          </div>
+          <div class="col-2">04:39 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+
+
+        <!---small song playlist start--->
+
+        <div class="song-playlist m-1 ms-4 col-md-6 row  align-items-center">
+          <div class="col-1 h3">02</div>
+
+          <div class="col d-flex">
+            <img class="playlistimage rounded m-1"src="images/aniruth.jpg">
+            <div class="ms-1">
+            <div>Kaavaali</div> <small>Anirudh Ravichander </small> 
+        </div>
+          </div>
+          <div class="col-2">05:17 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </div>
+        </div>
+        <!---small song playlist end--->
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end play list -->
+
+    <h5 class="category-title mx-4" > Rock <small class="float-end" ><a href="">view more  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+    </svg></a></small></h5>
+
+    <!-- start play list -->
+    <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
+      
+      <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/devid guetta.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Hey Mama
+            
+          </div>
+           
+          <small class="text-white">ft Nicki Minaj, Bebe Rexha </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/01m.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Payphone
+            
+          </div>
+           
+          <small class="text-white">Maroon 5, ft. Wiz Khalifa
+
+          </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/04.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> You Don't Own Me
+            
+          </div>
+           
+          <small class="text-white">Lesley Gore · 1963
+          </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/akon.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Right Now (Na Na Na)
+            
+          </div>
+           
+          <small class="text-white">Akon </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/one.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Counting Stars
+            
+          </div>
+           
+          <small class="text-white">OneRepublic </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/09.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Hey Mama
+            
+          </div>
+           
+          <small class="text-white">ft Nicki Minaj, Bebe Rexha </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+    
+
+    </section>
+
+    <!-- end catagory list -->
+
+
+    <h5 class="category-title mx-4"> pop <small class="float-end"><a href="">view more  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+    </svg></a></small></h5>
+
+    <!-- start play list -->
+    <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
+      
+      <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/06.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Hey Mama
+            
+          </div>
+           
+          <small class="text-white">ft Nicki Minaj, Bebe Rexha </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/07.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Payphone
+            
+          </div>
+           
+          <small class="text-white">Maroon 5, ft. Wiz Khalifa
+
+          </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/08.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> You Don't Own Me
+            
+          </div>
+           
+          <small class="text-white">Lesley Gore · 1963
+          </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/10.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Right Now (Na Na Na)
+            
+          </div>
+           
+          <small class="text-white">Akon </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/one.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Counting Stars
+            
+          </div>
+           
+          <small class="text-white">OneRepublic </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+     <!-- start card -->
+  <div class="m-5 " style="width: 200px;">
+    <div style="position: relative;">
+        <img src="images/09.jpg" class="catagory-song-img img-fluid" >
+      <a href="#">
+        <div class="catagory-song-hover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="catagory-song-hover-play bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+      </div>
+      </a>
+    </div>
+        <div style="text-align: center;">
+          <div class="lead text-white"> Hey Mama
+            
+          </div>
+           
+          <small class="text-white">ft Nicki Minaj, Bebe Rexha </small>
+
+        </div>
+
+  </div>
+
+    <!-- end card -->
+    
+
+    </section>
+  
+
+    <!-- end catagory list -->
+
+     <!-- PlayList side bar -->
+
+    
+
+
+  </main>
+    <!-- main code end -->
+
+    <!-- footer code start -->
+
+    <footer class="p-5 pt-4  row bg-dark text-white" >
+		
+      <div class="col-md-3 mb-4 col-sm-6 container-fluid">
+        <h5>Quick links</h5>
+        <ul class="nav flex-column">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">Signup</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-4 col-sm-6">
+        <h5>Quick links</h5>
+        <ul class="nav ">
+          <li><a href="#">Featured</a></li>
+          <li><a href="#">New releases</a></li>
+          <li><a href="#">Signup</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h5>Subscribe to our newsletter</h5>
+        <div>to receive news content</div>
+  
+        <div class="input-group mb-3 mt-2">
+          <input type="text" class="form-control" placeholder="Email" >
+          <span class="bg-primary text-white input-group-text" id="basic-addon2">Subscribe</span>
+        </div>
+  
+        <div class="text-white h5 ">
+          Follow us: 
+          <a href="https://www.facebook.com/your-page-url">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/accounts/login/?next=%2Fyour-page-url%2F&source=desktop_nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
+          <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AYZoVhd1H1OMD7aGWx61JOThNoMBBseSPgMYkWnhzjwZzmtrsj11BEUDpDeYKFOuQwGRcA11G8gomg&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-452852088%3A1697039841520860&theme=glif">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+              <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+            </svg>
+
+          </a>
+          
+        </div>
+  
+      </div>
+    </footer>
+    
+    <!-- footer code end -->
+
+    <div class="audio-container">
+      <audio controls class="fixed-bottom">
+          <source src="images/play song.mp3" type="audio/mp3">
+      </audio>
+      <input type="range" value="0">
+  </div>
+  </body>
+</html>
